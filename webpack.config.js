@@ -5,6 +5,11 @@ const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    compress: true,
+    port: 8080
+  },
   entry: './js/main.js',
   output: {
     filename: 'bundle.[contenthash].js',
@@ -14,7 +19,7 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new HtmlPlugin({
-      template: 'public/index.html',
+      template: 'index.html',
     }),
     new CopyPlugin({
       patterns: [
