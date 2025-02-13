@@ -5,12 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devServer: {
-    contentBase: path.join(__dirname, 'build'),
-    compress: true,
-    port: 8080
-  },
-  entry: './js/main.js',
+  entry: './public/js/main.js',
   output: {
     filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, 'build'),

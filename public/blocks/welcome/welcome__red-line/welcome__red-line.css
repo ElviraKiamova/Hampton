@@ -1,0 +1,6 @@
+.welcome__red-line {
+  display: block;
+  width: 70px;
+  border: 1px solid #c10040;
+  margin: 49px 0 58px;
+}

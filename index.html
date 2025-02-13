@@ -15,23 +15,33 @@
 </head>
 <body>
   <div class="page">
-    <header class="header">
-      <a class="header__link-logo" href="#"><img class="header__logo" src="./images/logo.png" alt="отель Hampton"></a>
-      <div class="header__box header__box_time">
-        <p class="header__text">Местное время</p>
-        <p class="header__text header__text_big">10:23</p>
-      </div>
-      <div  class="header__box header__box_weather">
-        <p class="header__text">ПОГОДА Волгоград</p>
-        <p class="header__text header__text_big">+27 &deg;C</p>
-      </div>
-    </header>
-    <main class="content">
-      <section>
+    <div class="container">
+      <video class="video-background" autoplay loop muted playsinline poster="">
+        <source class="video" src="./video/hello_site_video.mp4" type="video/mp4">
+        Если ваше соединение медленное или видео не загружается, мы предоставили вам альтернативное изображение на фоне.
+      </video>
+      <header class="header">
+        <a class="header__link-logo" href="#"><img class="header__logo" src="./images/logo.png" alt="отель Hampton"></a>
+        <div class="header__box header__box_time">
+          <p class="header__text">Местное время</p>
+          <p class="header__text header__text_big">10:23</p>
+        </div>
+        <div  class="header__box header__box_weather">
+          <p class="header__text">ПОГОДА Волгоград</p>
+          <p class="header__text header__text_big">+27 &deg;C</p>
+        </div>
+      </header>
+      <main class="content">
+      <section class="welcome">
+        <h1 class="welcome__title">Добро пожаловать в отель  Hampton Volgograd</h1>
+        <span class="welcome__red-line"></span>
+        <p class="welcome__text">Hampton by Hilton Volgograd Profsoyuznaya - это современный отель, который предоставляет свои услуги путешественникам, ценящим качество за разумные деньги.</p>
+        <p class="welcome__text">Hampton by Hilton - Превосходя ожидания.</p>
       </section>
-    </main>
-  </div>
-  <aside>
+      </main>
+    </div>
+    <aside class="sidebar">
   </aside>
+  </div>
 </body>
 </html>

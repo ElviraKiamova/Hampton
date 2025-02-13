@@ -11,6 +11,7 @@ scroll-behavior: smooth;
 
 .page {
   display: flex;
+  width: 100%; 
   max-width: 2560px;
   height: 100vh;
   margin: 0;
