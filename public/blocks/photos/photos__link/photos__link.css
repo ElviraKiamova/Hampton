@@ -2,6 +2,7 @@
   position: relative;
   display: block;
   color: #FFF;
+  cursor: pointer;
 }
 
 .photos__link.cozy-rooms {
