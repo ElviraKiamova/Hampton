@@ -1,0 +1,10 @@
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+  margin: 86px 58px 0 55px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 36px;
+  text-transform: uppercase;
+}

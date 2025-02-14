@@ -1,0 +1,9 @@
+.sidebar__text { 
+  margin: 2px 0 0 55px;
+  text-align: center;
+  max-width: 180px;
+}
+
+.sidebar__text:first-child { 
+  margin: 0;
+}

@@ -18,3 +18,13 @@
 @import url("../blocks/welcome/welcome__text/welcome__text.css");
 
 @import url("../blocks/sidebar/sidebar.css");
+@import url("../blocks/sidebar/sidebar__nav/sidebar__nav.css");
+@import url("../blocks/sidebar/sidebar__list/sidebar__list.css");
+@import url("../blocks/sidebar/sidebar__item/sidebar__item.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_active/sidebar__link_active.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_icon/sidebar__link_icon.css");
+@import url("../blocks/sidebar/sidebar__box-icon/sidebar__box-icon.css");
+@import url("../blocks/sidebar/sidebar__img-icon/sidebar__img-icon.css");
+@import url("../blocks/sidebar/sidebar__button/sidebar__button.css");
+@import url("../blocks/sidebar/sidebar__text/sidebar__text.css");
