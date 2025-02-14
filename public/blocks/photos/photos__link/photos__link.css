@@ -3,6 +3,8 @@
   display: block;
   color: #FFF;
   cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
 }
 
 .photos__link.cozy-rooms {
