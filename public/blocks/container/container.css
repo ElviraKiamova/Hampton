@@ -3,5 +3,6 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  overflow: hidden;
+  overflow-y: auto;
+  margin-right: 283px;
 }

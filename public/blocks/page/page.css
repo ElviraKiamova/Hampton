@@ -10,10 +10,12 @@ scroll-behavior: smooth;
 }
 
 .page {
+  position: relative;
   display: flex;
   width: 100%; 
   max-width: 2560px;
-  /* height: 100vh; */
+  height: 100vh;
+  overflow: hidden;
   margin: 0;
   background-color: #e6e6e6;
   font-family: "Open Sans", serif;

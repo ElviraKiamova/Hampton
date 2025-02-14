@@ -1,5 +1,7 @@
 const videoElement = document.querySelector('.video-background');
 const linkLanguageElements = document.querySelectorAll('.sidebar__link_language');
+const photosSectionElement = document.querySelector('.photos');
+const containerElement = document.querySelector('.container');
 
 // поведение фона при медленном интернете
 document.addEventListener('DOMContentLoaded', () => {    
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
 // переключение языка сайта
 linkLanguageElements.forEach(link => {
   link.addEventListener('click', (event) => {
@@ -29,4 +32,14 @@ linkLanguageElements.forEach(link => {
     linkLanguageElements.forEach(item => item.classList.remove('sidebar__link_active'));
     link.classList.add('sidebar__link_active');
   });
+});
+
+
+// прокрутка главной страницы
+containerElement.addEventListener('scroll', () => {
+  if (containerElement.scrollTop > 300) {
+    photosSectionElement.style.display = 'grid';
+  } else {
+    photosSectionElement.style.display = 'none';
+  }
 });

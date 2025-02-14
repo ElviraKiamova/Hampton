@@ -1,5 +1,7 @@
 .photos {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(4, 570px);
   grid-template-rows: repeat(2, 567px);
+  max-width: 2276px;
+  margin-right: 283px;
 }
