@@ -8,8 +8,8 @@
   background-color: #004890;
   background-image: url(../../../images/key.svg);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 129px 120px;
+  background-position: 50% 50%;
+  background-size: cover;
   font-family: "Open Sans Light";
   font-size: 24px;
   line-height: 25px;
