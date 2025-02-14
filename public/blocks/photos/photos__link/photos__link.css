@@ -1,0 +1,36 @@
+.photos__link {
+  position: relative;
+  display: block;
+  color: #FFF;
+}
+
+.photos__link.cozy-rooms {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  color: #4d4d4d;
+}
+
+.photos__link.special-offers {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.photos__link.organization-events {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+.photos__link.hotel-gallery {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.photos__link.services {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.photos__link.visit {
+  grid-column: 3 / span 2;
+  grid-row: 2 / 3;
+}
