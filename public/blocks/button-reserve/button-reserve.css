@@ -1,4 +1,4 @@
-.sidebar__button { 
+.button-reserve { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +19,34 @@
   cursor: pointer;
   text-decoration: none;
 }
+  
+.header .button-reserve_header {
+    display: none;
+  }
 
 @media (max-width: 1400px) {
-  .sidebar__button {
+  .button-reserve {
      margin-top: 35px;
   }
 }
 
-@media (max-width: 1300px) {
-  .sidebar__button {
+@media (max-width: 1000px) {
+  .header .button-reserve_header {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    height: 67px;
+    margin: 0;
+    padding: 0 37px 0;
+     background-image: url(../../../images/key-320.svg);
+    background-position: 5% 50%;
+    background-size: 80% auto;
+    font-size: 18px;
+    z-index: 3;
+  }
+  .sidebar .button-reserve_sidebar {
     display: none;
-
   }
 }

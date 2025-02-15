@@ -7,12 +7,25 @@
 
 @media (max-width: 2000px) {
   .welcome {
-    padding: 510px 0 95px 116px;
+    padding: 510px 0 94px 116px;
   }
 }
 
 @media (max-width: 1400px) {
   .welcome {
     padding: 245px 0 72px 116px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .welcome {
+    margin-top: 67px;
+    padding: 139px 0 52px 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .welcome {
+    padding: 139px 0 60px 32px;
   }
 }

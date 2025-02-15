@@ -21,3 +21,9 @@
     min-height: 768px;
   }
 }
+
+@media (max-width: 1000px) {
+  .video__background {
+   top: 134px;
+  }
+}

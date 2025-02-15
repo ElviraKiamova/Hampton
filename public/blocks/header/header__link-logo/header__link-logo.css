@@ -1,5 +1,10 @@
-
 .header__link-logo {
   margin-right: auto;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .header__link-logo {
+    margin: 0;
+  }
 }

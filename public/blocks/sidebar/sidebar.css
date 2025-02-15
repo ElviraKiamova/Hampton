@@ -24,10 +24,11 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .sidebar {
     position: relative;
     align-items: center;
-    margin: 50px auto 27px;
+    height: auto;
+    margin: 37px auto 27px;
   }
 }

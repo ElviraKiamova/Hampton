@@ -13,3 +13,25 @@
     letter-spacing: -1px;
   }
 }
+
+@media (max-width: 1200px) {
+  .welcome__title {
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .welcome__title {
+    max-width: 400px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome__title {
+    max-width: 230px;
+    font-size: 26px;
+    line-height: 1.14;
+  }
+}

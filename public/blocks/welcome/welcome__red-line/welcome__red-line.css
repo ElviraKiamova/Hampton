@@ -4,3 +4,9 @@
   border: 1px solid #c10040;
   margin: 38px 0 52px 10px;
 }
+
+@media (max-width: 400px) {
+  .welcome__red-line {
+    margin: 27px 0 36px;
+  }
+}

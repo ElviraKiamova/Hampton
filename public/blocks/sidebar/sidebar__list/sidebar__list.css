@@ -9,7 +9,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .sidebar__list {
     display: none;
   }

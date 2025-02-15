@@ -21,3 +21,9 @@
     display: block;
   }
 }
+
+@media (max-width: 400px) {
+  .welcome__text {
+    line-height: 1.1;
+  }
+}
