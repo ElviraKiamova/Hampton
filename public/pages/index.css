@@ -27,6 +27,9 @@
 @import url("../blocks/sidebar/sidebar__link/sidebar__link.css");
 @import url("../blocks/sidebar/sidebar__link/sidebar__link_active/sidebar__link_active.css");
 @import url("../blocks/sidebar/sidebar__link/sidebar__link_icon/sidebar__link_icon.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_tel/sidebar__link_tel.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_email/sidebar__link_email.css");
+@import url("../blocks/sidebar/sidebar__address/sidebar__address.css");
 @import url("../blocks/sidebar/sidebar__box-icon/sidebar__box-icon.css");
 @import url("../blocks/sidebar/sidebar__img-icon/sidebar__img-icon.css");
 @import url("../blocks/sidebar/sidebar__button/sidebar__button.css");

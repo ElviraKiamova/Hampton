@@ -8,3 +8,9 @@
   line-height: 36px;
   text-transform: uppercase;
 }
+
+@media (max-width: 1300px) {
+  .sidebar__list {
+    display: none;
+  }
+}

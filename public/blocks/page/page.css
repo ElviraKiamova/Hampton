@@ -34,3 +34,9 @@ scroll-behavior: smooth;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
+
+@media (max-width: 1400px) {
+  .page {
+    align-items: center;
+  }
+}

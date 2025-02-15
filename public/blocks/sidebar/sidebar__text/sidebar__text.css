@@ -13,3 +13,10 @@
     margin-left: 60px;
   }
 }
+
+@media (max-width: 1300px) {
+  .sidebar__text { 
+    margin: 0;
+    line-height: 18px;
+  }
+}

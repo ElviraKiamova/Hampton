@@ -23,3 +23,11 @@
     max-height: 768px;
   }
 }
+
+@media (max-width: 1300px) {
+  .sidebar {
+    position: relative;
+    align-items: center;
+    margin: 50px auto 27px;
+  }
+}

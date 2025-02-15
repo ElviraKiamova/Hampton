@@ -29,6 +29,25 @@
 @media (max-width: 1360px) {
   .photos {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
 
+@media (max-width: 1300px) {
+  .photos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto); 
+  }
+}
+
+@media (max-width: 900px) {
+  .photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 321px) {
+  .photos {
+    grid-auto-rows: 212px;
   }
 }

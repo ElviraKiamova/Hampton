@@ -7,3 +7,9 @@
   margin-right: 283px;
   height: 100vh;
 }
+
+@media (max-width: 1300px) {
+  .container {
+    margin: 0;
+  }
+}

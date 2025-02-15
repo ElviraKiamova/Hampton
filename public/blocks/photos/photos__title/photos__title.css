@@ -67,10 +67,10 @@
   } 
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .photos__link.cozy-rooms .photos__title {
     top: 30px;
-    left: 567px;
+    left: 367px;
   } 
 }
 
@@ -98,22 +98,13 @@
 
 @media (max-width: 1360px) {
   .photos__link.cozy-rooms .photos__title {
-    top: 300px;
-    left: 200px;
+    right: 100px;
+    top: 100px;
   }
-  .photos__link.special-offers .photos__title {
-    bottom: 43px;
-    left: 65px;
-  }
-  .photos__link.organization-events .photos__title {
-    left: 75px;
-  }
-  .photos__link.services .photos__title {
-    right: 50px;
-    top: 45px;
-  }
-  .photos__link.visit .photos__title {
-    top: 150px;
-    right: 430px;
+}
+
+@media (max-width: 900px) {
+  .photos__title {
+    font-size: 18px;
   }
 }

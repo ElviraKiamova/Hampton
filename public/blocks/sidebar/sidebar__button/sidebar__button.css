@@ -25,3 +25,10 @@
      margin-top: 35px;
   }
 }
+
+@media (max-width: 1300px) {
+  .sidebar__button {
+    display: none;
+
+  }
+}
