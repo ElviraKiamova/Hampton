@@ -1,6 +1,21 @@
 const linkLanguageElements = document.querySelectorAll('.sidebar__link_language');
 const photosSectionElement = document.querySelector('.photos');
 const containerElement = document.querySelector('.container');
+const timeElement = document.querySelector('.time');
+
+
+// обновление времени
+function updateTime() {
+  const dateHours = new Date().getUTCHours();
+  const dateMinutes = new Date().getUTCMinutes();
+  const volgHours = (dateHours + 3) % 24;
+  const hours = volgHours.toString().padStart(2, '0');
+  const minutes = dateMinutes.toString().padStart(2, '0');
+  timeElement.textContent = `${hours}:${minutes}`;
+}
+setInterval(updateTime, 1000);
+updateTime();
+
 
 // поведение фона при медленном интернете
 document.addEventListener('DOMContentLoaded', () => {  
