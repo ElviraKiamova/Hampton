@@ -1,7 +1,34 @@
+const UPDATE_EVERY_HOUR = 3600000;
+const YOUR_CITY = 'Volgograd,ru';
+const API_KEY = '2316a73e1e0350e6fce6d81077c4e27b';
 const linkLanguageElements = document.querySelectorAll('.sidebar__link_language');
 const photosSectionElement = document.querySelector('.photos');
 const containerElement = document.querySelector('.container');
 const timeElement = document.querySelector('.time');
+const weatherElement = document.querySelector('.weather');
+
+
+// отображение погоды
+function fetchWeather() {
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}&lang=ru`;
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Что-то пошло не так...');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      const temperature = data.main.temp.toFixed(0);
+      weatherElement.textContent = `${temperature}`;
+    })
+    .catch(error => {
+      console.error('Ошибка:', error);
+    });
+}
+fetchWeather();
+setInterval(fetchWeather, UPDATE_EVERY_HOUR);
 
 
 // обновление времени

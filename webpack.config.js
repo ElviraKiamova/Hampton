@@ -4,9 +4,6 @@ const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'build'),
-    },
     compress: true,
     port: 8080,
     open: true,
