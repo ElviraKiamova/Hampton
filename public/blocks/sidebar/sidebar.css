@@ -11,3 +11,15 @@
   color: #4d4d4d;
   background-color: #e6e6e6;
 }
+
+@media (max-width: 2000px) {
+  .sidebar {
+    max-height: 1080px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .sidebar {
+    max-height: 768px;
+  }
+}

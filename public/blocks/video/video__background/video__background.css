@@ -8,3 +8,16 @@
   overflow: hidden;
   object-fit: cover;
 }
+
+@media (max-width: 2000px) {
+  .video__background {
+    min-height: 1080px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .video__background {
+    min-height: 768px;
+  }
+}

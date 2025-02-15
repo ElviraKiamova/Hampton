@@ -1,5 +1,23 @@
 .welcome__text {
   max-width: 335px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.15;
+  word-spacing: 1.5px;
+  letter-spacing: -0.4px;
+}
+
+.welcome__text_1920 {
+    display: none;
+    max-width: 270px;
+  }
+
+@media (max-width: 2000px) {
+  .welcome__text_2560 {
+    display: none;
+  }
+  .welcome__text_1920 {
+    display: block;
+  }
 }

@@ -2,4 +2,14 @@
   max-width: 760px;
   margin: 0;
   font-size: 60px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+@media (max-width: 1400px) {
+  .welcome__title {
+    font-size: 50px;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+  }
 }

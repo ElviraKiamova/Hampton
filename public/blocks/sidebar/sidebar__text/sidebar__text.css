@@ -7,3 +7,9 @@
 .sidebar__text:first-child { 
   margin: 0;
 }
+
+@media (max-width: 1400px) {
+  .sidebar__text { 
+    margin-left: 60px;
+  }
+}

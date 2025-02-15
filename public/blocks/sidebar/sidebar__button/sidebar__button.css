@@ -1,8 +1,11 @@
 .sidebar__button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 143px;
+  height: 139px;
   margin-top: 43px;
-  padding: 0;
+  padding: 0 0 5px 0;
   color: #FFF;
   border: none;
   background-color: #004890;
@@ -10,8 +13,15 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  font-family: "Open Sans Light";
+  font-family: "OpenSansLight", serif;
   font-size: 24px;
   line-height: 25px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  .sidebar__button {
+     margin-top: 35px;
+  }
 }

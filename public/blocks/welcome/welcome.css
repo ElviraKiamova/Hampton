@@ -1,6 +1,18 @@
 .welcome {
   position: relative;
-  padding: 760px 0 185px 208px;
-  font-family: "Open Sans Light", serif;
+  padding: 750px 0 183px 208px;
+  font-family: "OpenSansLight", serif;
   z-index: 1;
+}
+
+@media (max-width: 2000px) {
+  .welcome {
+    padding: 510px 0 95px 116px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .welcome {
+    padding: 245px 0 72px 116px;
+  }
 }

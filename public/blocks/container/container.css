@@ -5,4 +5,5 @@
   flex-grow: 1;
   overflow-y: auto;
   margin-right: 283px;
+  height: 100vh;
 }

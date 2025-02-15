@@ -10,3 +10,9 @@
   box-sizing: border-box;
   z-index: 1;
 }
+
+@media (max-width: 2000px) {
+  .header {
+    margin-left: 102px;
+  }
+}

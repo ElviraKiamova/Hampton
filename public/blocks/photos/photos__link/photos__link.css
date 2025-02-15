@@ -37,3 +37,18 @@
   grid-column: 3 / span 2;
   grid-row: 2 / 3;
 }
+
+@media (max-width: 1380px) {
+  .photos__link.organization-events {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .photos__link.special-offers {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .photos__link.visit {
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+  }
+}
