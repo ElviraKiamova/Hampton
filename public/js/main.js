@@ -6,6 +6,7 @@ const photosSectionElement = document.querySelector('.photos');
 const containerElement = document.querySelector('.container');
 const timeElement = document.querySelector('.time');
 const weatherElement = document.querySelector('.weather');
+const videoSectionElement = document.querySelector('.video');
 
 
 // отображение погоды
@@ -19,7 +20,6 @@ const fetchWeather = () => {
       return response.json();
     })
     .then(data => {
-      console.log(data);
       const temperature = data.main.temp.toFixed(0);
       weatherElement.textContent = `${temperature}`;
     })
@@ -78,12 +78,14 @@ linkLanguageElements.forEach(link => {
 
 
 // прокрутка главной страницы
-containerElement.addEventListener('scroll', () => {
-  if (containerElement.scrollTop > 10) {
+if (window.innerHeight > videoSectionElement.clientHeight) {
+  photosSectionElement.style.opacity = '1';
+  photosSectionElement.style.visibility = 'visible';
+} else {
+  containerElement.addEventListener('scroll', () => {
+    if (containerElement.scrollTop > 10) {
       photosSectionElement.style.opacity = '1';
       photosSectionElement.style.visibility = 'visible';
-    } else {
-      photosSectionElement.style.opacity = '0';
-      photosSectionElement.style.visibility = 'hidden';
     }
-});
+  });
+}

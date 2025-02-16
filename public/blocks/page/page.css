@@ -42,3 +42,9 @@ scroll-behavior: smooth;
     align-items: center;
   }
 }
+
+@media (max-width: 1400px) {
+  .page {
+    align-items: center;
+  }
+}
