@@ -46,7 +46,7 @@ updateTime();
 
 // поведение фона при медленном интернете
 document.addEventListener('DOMContentLoaded', () => {  
-  const videoElement = document.querySelector('.video-background');  
+  const videoElement = document.querySelector('.video__background');  
   if (navigator.connection) {
     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     const effectiveType = connection.effectiveType;

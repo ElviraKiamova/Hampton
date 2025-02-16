@@ -43,8 +43,8 @@ scroll-behavior: smooth;
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
   .page {
-    align-items: center;
+    height: 100%;
   }
 }
