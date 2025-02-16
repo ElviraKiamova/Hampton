@@ -4,8 +4,10 @@
   flex-direction: column;
   flex-grow: 1;
   overflow-y: auto;
-  margin-right: 283px;
   height: 100vh;
+  max-width: 2560px;
+  margin: 0 auto;
+  margin-right: 283px;
 }
 
 @media (max-width: 1000px) {

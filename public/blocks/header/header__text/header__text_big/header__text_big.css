@@ -2,3 +2,8 @@
 .header__text_big {
   font-size: 30px;
 }
+
+.header__text.weather_text {
+  display: inline-block;
+  width: 88px;
+}

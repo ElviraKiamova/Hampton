@@ -1,12 +1,12 @@
 .sidebar {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  max-width: 283px;
+  width: 283px;
   max-height: 1440px;
   color: #4d4d4d;
   background-color: #e6e6e6;

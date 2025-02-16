@@ -87,4 +87,3 @@ containerElement.addEventListener('scroll', () => {
       photosSectionElement.style.visibility = 'hidden';
     }
 });
-
