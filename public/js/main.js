@@ -9,8 +9,8 @@ const weatherElement = document.querySelector('.weather');
 
 
 // отображение погоды
-function fetchWeather() {
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}&lang=ru`;
+const fetchWeather = () => {
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${YOUR_CITY}&units=metric&appid=${API_KEY}&lang=ru`;
   fetch(apiUrl)
     .then(response => {
       if (!response.ok) {
@@ -32,7 +32,7 @@ setInterval(fetchWeather, UPDATE_EVERY_HOUR);
 
 
 // обновление времени
-function updateTime() {
+const updateTime = () => {
   const dateHours = new Date().getUTCHours();
   const dateMinutes = new Date().getUTCMinutes();
   const volgHours = (dateHours + 3) % 24;
@@ -78,10 +78,13 @@ linkLanguageElements.forEach(link => {
 
 
 // прокрутка главной страницы
-// containerElement.addEventListener('scroll', () => {
-//   if (containerElement.scrollTop > 10) {
-//     photosSectionElement.style.display = 'grid';
-//   } else {
-//     photosSectionElement.style.display = 'none';
-//   }
-// });
+containerElement.addEventListener('scroll', () => {
+  if (containerElement.scrollTop > 10) {
+      photosSectionElement.style.opacity = '1';
+      photosSectionElement.style.visibility = 'visible';
+    } else {
+      photosSectionElement.style.opacity = '0';
+      photosSectionElement.style.visibility = 'hidden';
+    }
+});
+

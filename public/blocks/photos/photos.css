@@ -4,6 +4,9 @@
   grid-template-rows: minmax(403px, 567px) minmax(421px, 567px);
   width: 100%;
   margin-right: 283px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
 @media (max-width: 1921px) {
