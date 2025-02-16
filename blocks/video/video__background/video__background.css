@@ -1,0 +1,31 @@
+.video__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 1440px;
+  z-index: 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@media (max-width: 2000px) {
+  .video__background {
+    min-height: 1080px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .video__background {
+    min-height: 768px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .video__background {
+    top: 134px;
+    min-height: 546px;
+    height: 546px;
+  }
+}

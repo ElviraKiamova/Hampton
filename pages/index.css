@@ -1,0 +1,47 @@
+@import url("../styles/normalize.css");
+@import url("../styles/fonts.css");
+
+@import url("../blocks/page/page.css");
+@import url("../blocks/container/container.css");
+
+@import url("../blocks/video/video.css");
+@import url("../blocks/video/video__background/video__background.css");
+@import url("../blocks/video/video__sourse/video__sourse.css");
+
+@import url("../blocks/button-reserve/button-reserve.css");
+
+@import url("../blocks/header/header.css");
+@import url("../blocks/header/header__link-logo/header__link-logo.css");
+@import url("../blocks/header/header__logo/header__logo.css");
+@import url("../blocks/header/header__box/header__box.css");
+@import url("../blocks/header/header__text/header__text.css");
+@import url("../blocks/header/header__text/header__text_big/header__text_big.css");
+@import url("../blocks/header/header__box-menu/header__box-menu.css");
+@import url("../blocks/header/header__burger-menu/header__burger-menu.css");
+@import url("../blocks/header/header__line-menu/header__line-menu.css");
+@import url("../blocks/header/header__text-menu/header__text-menu.css");
+
+@import url("../blocks/welcome/welcome.css");
+@import url("../blocks/welcome/welcome__title/welcome__title.css");
+@import url("../blocks/welcome/welcome__red-line/welcome__red-line.css");
+@import url("../blocks/welcome/welcome__text/welcome__text.css");
+
+@import url("../blocks/sidebar/sidebar.css");
+@import url("../blocks/sidebar/sidebar__nav/sidebar__nav.css");
+@import url("../blocks/sidebar/sidebar__list/sidebar__list.css");
+@import url("../blocks/sidebar/sidebar__item/sidebar__item.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_active/sidebar__link_active.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_icon/sidebar__link_icon.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_tel/sidebar__link_tel.css");
+@import url("../blocks/sidebar/sidebar__link/sidebar__link_email/sidebar__link_email.css");
+@import url("../blocks/sidebar/sidebar__address/sidebar__address.css");
+@import url("../blocks/sidebar/sidebar__box-icon/sidebar__box-icon.css");
+@import url("../blocks/sidebar/sidebar__img-icon/sidebar__img-icon.css");
+@import url("../blocks/sidebar/sidebar__text/sidebar__text.css");
+
+
+@import url("../blocks/photos/photos.css");
+@import url("../blocks/photos/photos__img/photos__img.css");
+@import url("../blocks/photos/photos__link/photos__link.css");
+@import url("../blocks/photos/photos__title/photos__title.css");

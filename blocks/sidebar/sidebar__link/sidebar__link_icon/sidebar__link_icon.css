@@ -1,0 +1,24 @@
+.sidebar__link_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+}
+
+.sidebar__link_icon.blue {
+  background-color: #7795c4;
+}
+
+.sidebar__link_icon.dark-blue {
+  background-color: #516191;
+}
+
+.sidebar__link_icon.light-blue {
+  background-color: #72c2fd;
+}
+
+.sidebar__link_icon.orange {
+  background-color: #e89b4b;
+}

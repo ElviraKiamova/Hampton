@@ -1,0 +1,13 @@
+
+.header__text {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+.header__text:first-child {
+  max-width: 70px;
+  padding-top: 5px;
+  text-align: end;
+  align-self: center;
+}

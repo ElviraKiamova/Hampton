@@ -1,0 +1,37 @@
+.welcome__title {
+  max-width: 760px;
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+@media (max-width: 1400px) {
+  .welcome__title {
+    font-size: 50px;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .welcome__title {
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .welcome__title {
+    max-width: 400px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome__title {
+    max-width: 230px;
+    font-size: 26px;
+    line-height: 1.14;
+  }
+}
