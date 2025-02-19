@@ -1,1 +1,91 @@
-const UPDATE_EVERY_HOUR=36e5,YOUR_CITY="Volgograd,ru",API_KEY="2316a73e1e0350e6fce6d81077c4e27b",linkLanguageElements=document.querySelectorAll(".sidebar__link_language"),photosSectionElement=document.querySelector(".photos"),containerElement=document.querySelector(".container"),timeElement=document.querySelector(".time"),weatherElement=document.querySelector(".weather"),videoSectionElement=document.querySelector(".video"),fetchWeather=()=>{fetch(`https://api.openweathermap.org/data/2.5/weather?q=${YOUR_CITY}&units=metric&appid=${API_KEY}&lang=ru`).then((e=>{if(!e.ok)throw new Error("Что-то пошло не так...");return e.json()})).then((e=>{const t=e.main.temp.toFixed(0);weatherElement.textContent=`${t}`})).catch((e=>{console.error("Ошибка:",e)}))};fetchWeather(),setInterval(fetchWeather,36e5);const updateTime=()=>{const e=(new Date).getUTCHours(),t=(new Date).getUTCMinutes(),n=((e+3)%24).toString().padStart(2,"0"),o=t.toString().padStart(2,"0");timeElement.textContent=`${n}:${o}`};setInterval(updateTime,1e3),updateTime(),document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".video__background");navigator.connection?"4g"===(navigator.connection||navigator.mozConnection||navigator.webkitConnection).effectiveType?e.play().catch((e=>{console.warn("Видео остановлено:",e)})):(e.poster="../images/main.jpg",e.load()):e.play().catch((e=>{console.warn("Видео заблокировано:",e)}))})),linkLanguageElements.forEach((e=>{e.addEventListener("click",(t=>{t.preventDefault(),linkLanguageElements.forEach((e=>e.classList.remove("sidebar__link_active"))),e.classList.add("sidebar__link_active")}))})),window.innerHeight>videoSectionElement.clientHeight?(photosSectionElement.style.opacity="1",photosSectionElement.style.visibility="visible"):containerElement.addEventListener("scroll",(()=>{containerElement.scrollTop>10&&(photosSectionElement.style.opacity="1",photosSectionElement.style.visibility="visible")}));
+const UPDATE_EVERY_HOUR = 3600000;
+const YOUR_CITY = 'Volgograd,ru';
+const API_KEY = '2316a73e1e0350e6fce6d81077c4e27b';
+const linkLanguageElements = document.querySelectorAll('.sidebar__link_language');
+const photosSectionElement = document.querySelector('.photos');
+const containerElement = document.querySelector('.container');
+const timeElement = document.querySelector('.time');
+const weatherElement = document.querySelector('.weather');
+const videoSectionElement = document.querySelector('.video');
+
+
+// отображение погоды
+const fetchWeather = () => {
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${YOUR_CITY}&units=metric&appid=${API_KEY}&lang=ru`;
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Что-то пошло не так...');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const temperature = data.main.temp.toFixed(0);
+      weatherElement.textContent = `${temperature}`;
+    })
+    .catch(error => {
+      console.error('Ошибка:', error);
+    });
+}
+fetchWeather();
+setInterval(fetchWeather, UPDATE_EVERY_HOUR);
+
+
+// обновление времени
+const updateTime = () => {
+  const dateHours = new Date().getUTCHours();
+  const dateMinutes = new Date().getUTCMinutes();
+  const volgHours = (dateHours + 3) % 24;
+  const hours = volgHours.toString().padStart(2, '0');
+  const minutes = dateMinutes.toString().padStart(2, '0');
+  timeElement.textContent = `${hours}:${minutes}`;
+}
+setInterval(updateTime, 1000);
+updateTime();
+
+
+// поведение фона при медленном интернете
+document.addEventListener('DOMContentLoaded', () => {  
+  const videoElement = document.querySelector('.video__background');  
+  if (navigator.connection) {
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const effectiveType = connection.effectiveType;
+    
+    if (effectiveType === '4g') {
+      videoElement.play().catch(error => {
+        console.warn('Видео остановлено:', error);
+      });
+    } else {
+      videoElement.poster = "../images/main.jpg";
+      videoElement.load();
+    }
+  } else {
+    videoElement.play().catch(error => {
+      console.warn('Видео заблокировано:', error);
+    });
+  }
+});
+
+
+// переключение языка сайта
+linkLanguageElements.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    linkLanguageElements.forEach(item => item.classList.remove('sidebar__link_active'));
+    link.classList.add('sidebar__link_active');
+  });
+});
+
+
+// прокрутка главной страницы
+if (window.innerHeight > videoSectionElement.clientHeight) {
+  photosSectionElement.style.opacity = '1';
+  photosSectionElement.style.visibility = 'visible';
+} else {
+  containerElement.addEventListener('scroll', () => {
+    if (containerElement.scrollTop > 10) {
+      photosSectionElement.style.opacity = '1';
+      photosSectionElement.style.visibility = 'visible';
+    }
+  });
+}
