@@ -5,15 +5,14 @@
 
 @media (max-width: 1000px) {
   .video {
-    width: 100%;
-    max-height: 768px;
-    padding-bottom: 134px;
+    width: auto;
+    height: 100%;
   }
 }
 
 @media (max-width: 320px) {
   .video {
-    height: 567px;
+    max-height: 435px;
   }
 }
 

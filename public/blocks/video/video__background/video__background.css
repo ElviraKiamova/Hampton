@@ -13,7 +13,12 @@
 @media (max-width: 1000px) {
   .video__background {
     top: 134px;
-    width: auto;
-    max-height: 768px;
+    max-height: 565px;
+  }
+}
+
+@media (max-width: 320px) {
+  .video__background {
+    max-height: 435px;
   }
 }
