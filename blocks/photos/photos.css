@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: minmax(388px, 570px) minmax(431px, 570px) minmax(428px, 570px) minmax(390px, 570px);
   grid-template-rows: minmax(403px, 567px) minmax(421px, 567px);
-  flex: 0 0 100vh;
+  /* flex: 0 0 100vh; */
+  flex: 0 0 auto;
   width: 100%;
   opacity: 0;
   visibility: hidden;
@@ -41,7 +42,7 @@
 @media (max-width: 900px) {
   .photos {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 211px;
+    grid-auto-rows: minmax(211px, 1fr);
   }
 }
 
