@@ -1,5 +1,5 @@
 .photos {
-  display: grid;
+  display: none;
   grid-template-columns: minmax(388px, 570px) minmax(431px, 570px) minmax(428px, 570px) minmax(390px, 570px);
   grid-template-rows: minmax(403px, 567px) minmax(421px, 567px);
   width: 100%;
@@ -19,7 +19,7 @@
 @media (max-width: 1750px) {
   .photos {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, minmax(370px, 1fr));
   }
 }
 
@@ -33,14 +33,14 @@
 @media (max-width: 1370px) {
   .photos {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto); 
+    grid-template-rows: repeat(4, minmax(370px, 1fr));
   }
 }
 
 @media (max-width: 900px) {
   .photos {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
+    grid-auto-rows: 211px;
   }
 }
 

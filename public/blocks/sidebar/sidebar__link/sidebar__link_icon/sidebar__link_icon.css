@@ -7,18 +7,11 @@
   border-radius: 50px;
 }
 
-.sidebar__link_icon.blue {
-  background-color: #7795c4;
-}
-
-.sidebar__link_icon.dark-blue {
-  background-color: #516191;
-}
-
-.sidebar__link_icon.light-blue {
-  background-color: #72c2fd;
-}
-
-.sidebar__link_icon.orange {
-  background-color: #e89b4b;
+.owl {
+  background-image: url(../../../../images/owl.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 38px;
+  height: 23px;
 }

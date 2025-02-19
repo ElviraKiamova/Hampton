@@ -1,10 +1,9 @@
 {
-  "name": "hampton",
+  "name": "Hampton",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "a luxury hotel in Volgograd offering comfortable accommodation and an unforgettable vacation",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open", 
     "deploy": "gh-pages -d build"
@@ -14,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ElviraKiamova/Hampton.git"
   },
-  "author": "",
+  "author": "Kiamova Elvira",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ElviraKiamova/Hampton/issues"

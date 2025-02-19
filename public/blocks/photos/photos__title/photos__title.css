@@ -1,9 +1,10 @@
 .photos__title {
-  position: absolute;
+  position: relative;
   margin: 0;
   font-size: 31px;
   font-weight: 400;
   font-family: "OpenSansLight", serif;
+  z-index: 5;
 }
 
 .photos__link.cozy-rooms .photos__title {
