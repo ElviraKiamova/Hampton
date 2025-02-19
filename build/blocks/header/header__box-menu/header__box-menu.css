@@ -1,0 +1,11 @@
+
+.header__box-menu {
+   display: none;
+   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .header__box-menu {
+   display: flex;
+}
+}

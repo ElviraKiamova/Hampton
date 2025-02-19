@@ -1,0 +1,12 @@
+.sidebar__box-icon {
+  display: flex;
+  margin: 0 0 15px 56px;
+  gap: 14px;
+}
+
+@media (max-width: 1000px) {
+  .sidebar__box-icon {
+    justify-content: center;
+    margin: 0 0 15px 0;
+  }
+}

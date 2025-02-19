@@ -1,0 +1,22 @@
+.sidebar__text { 
+  margin: 1px 0 0 57px;
+  text-align: center;
+  max-width: 180px;
+}
+
+.sidebar__text:first-child { 
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .sidebar__text { 
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebar__text { 
+    margin: 0;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,27 @@
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 283px;
+  height: 100vh;
+  color: #4d4d4d;
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 1366px) {
+  .sidebar {
+    width: 285px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    position: relative;
+    align-items: center;
+    height: auto;
+    margin: 37px auto 27px;
+  }
+}

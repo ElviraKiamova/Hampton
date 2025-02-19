@@ -1,0 +1,121 @@
+.photos__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; 
+  color: #FFF;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.photos__link.cozy-rooms {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+  color: #4d4d4d;
+}
+
+.photos__link.special-offers {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.photos__link.organization-events {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+.photos__link.hotel-gallery {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.photos__link.services {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.photos__link.visit {
+  grid-column: 3 / span 2;
+  grid-row: 2 / 3;
+}
+
+@media (max-width: 1750px) {
+  .photos__link.organization-events {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .photos__link.special-offers {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .photos__link.visit {
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (max-width: 1370px) {
+  .photos__link.cozy-rooms {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    color: #4d4d4d;
+  }
+
+  .photos__link.organization-events {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .photos__link.hotel-gallery {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .photos__link.services {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .photos__link.special-offers {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .photos__link.visit {
+    grid-column: 1 / span 2;
+    grid-row: 4 / 5;
+  }
+}
+
+@media (max-width: 900px) {
+  .photos__link.cozy-rooms {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .photos__link.organization-events {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .photos__link.hotel-gallery {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .photos__link.services {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .photos__link.special-offers {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .photos__link.visit {
+    grid-column: 1;
+    grid-row: 6;
+  }
+}

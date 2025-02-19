@@ -1,0 +1,19 @@
+.video {
+  position: relative;
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .video {
+    max-height: 435px;
+  }
+}
+
+
