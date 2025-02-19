@@ -1,5 +1,5 @@
 .photos {
-  display: grid;
+  display: none;
   grid-template-columns: minmax(388px, 570px) minmax(431px, 570px) minmax(428px, 570px) minmax(390px, 570px);
   grid-template-rows: minmax(403px, 567px) minmax(421px, 567px);
   width: 100%;
