@@ -2,3 +2,9 @@
   position: relative;
 }
 
+@media (max-width: 1000px) {
+  .video {
+    width: 100%;
+  }
+}
+
