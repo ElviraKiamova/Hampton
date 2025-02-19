@@ -78,14 +78,23 @@ linkLanguageElements.forEach(link => {
 
 
 // прокрутка главной страницы
-if (window.innerHeight > videoSectionElement.clientHeight) {
-  photosSectionElement.style.opacity = '1';
-  photosSectionElement.style.visibility = 'visible';
-} else {
-  containerElement.addEventListener('scroll', () => {
-    if (containerElement.scrollTop > 10) {
+ function onUpdateStyles() {
+    if (window.innerWidth >= 1000) {
+      if (window.innerHeight > videoSectionElement.clientHeight) {
+        photosSectionElement.style.opacity = '1';
+        photosSectionElement.style.visibility = 'visible';
+      } else {
+        containerElement.addEventListener('scroll', () => {
+        if (containerElement.scrollTop > 10) {
+          photosSectionElement.style.opacity = '1';
+          photosSectionElement.style.visibility = 'visible';
+        }
+      });
+    }
+    } else {
       photosSectionElement.style.opacity = '1';
       photosSectionElement.style.visibility = 'visible';
     }
-  });
 }
+window.addEventListener('resize', onUpdateStyles);
+onUpdateStyles();
