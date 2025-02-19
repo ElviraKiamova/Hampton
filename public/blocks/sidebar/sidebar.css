@@ -2,25 +2,18 @@
   position: absolute;
   right: 0;
   top: 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 283px;
-  max-height: 1440px;
+  height: 100vh;
   color: #4d4d4d;
   background-color: #e6e6e6;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1366px) {
   .sidebar {
-    max-height: 1080px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .sidebar {
-    max-height: 768px;
+    width: 285px;
   }
 }
 
