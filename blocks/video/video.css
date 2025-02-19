@@ -5,7 +5,15 @@
 
 @media (max-width: 1000px) {
   .video {
-    width: 100%;
+    width: auto;
+    height: 100%;
   }
 }
+
+@media (max-width: 320px) {
+  .video {
+    max-height: 435px;
+  }
+}
+
 
