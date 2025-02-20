@@ -1,32 +1,27 @@
 .welcome {
   position: relative;
-  /* width: 100%; */
-  padding: 750px 0 0 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 0 180px 208px;
   font-family: "OpenSansLight", serif;
   z-index: 1;
 }
 
 @media (max-width: 2000px) {
   .welcome {
-    padding: 510px 0 0 116px;
+    margin: 0 0 92px 118px;
   }
 }
 
 @media (max-width: 1400px) {
   .welcome {
-    padding: 245px 0 0 116px;
+    margin: 0 0 70px 116px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .welcome {
-    margin-top: 67px;
-    padding: 139px 0 0 32px;
-  }
-}
-
-@media (max-width: 700px) {
-  .welcome {
-    padding: 139px 0 0 32px;
+    margin: 140px 0 65px 32px;
   }
 }

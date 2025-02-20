@@ -1,5 +1,8 @@
 .video {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 0 0 100vh;
 }
 
@@ -7,6 +10,7 @@
   .video {
     width: auto;
     height: 100%;
+    min-height: 567px;
     flex: 0 0 auto;
   }
 }
