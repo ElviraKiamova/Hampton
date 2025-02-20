@@ -1,20 +1,19 @@
-.navigation[aria-label="sidebar"] {
-  margin-bottom: auto;
+.navigation {
+  visibility: hidden; /* Прячем элемент, сохраняя его место в потоке */
+  opacity: 0;         /* Делаем его невидимым */
+  max-height: 0;      /* Начальное состояние для анимации */
+  overflow: hidden; 
+  background-color: #e6e6e6;
+  transition: max-height 0.6s ease-in-out, margin-bottom 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 
-.navigation[aria-label="header"] {
-  display: none;
-  z-index: 1;
-  background-color: #e6e6e6;
+.navigation[aria-label="sidebar"] {
+display: block; 
+margin-bottom: auto;
 }
 
 @media (max-width: 1000px) {
-  .navigation[aria-label="sidebar"] {
-    display: none;
-  }
-  .navigation[aria-label="header"] {
-    display: none;
-    z-index: 1;
-    background-color: #e6e6e6;
-  }
+.navigation[aria-label="sidebar"] {
+  display: none; 
+}
 }

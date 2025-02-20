@@ -7,6 +7,10 @@ const containerElement = document.querySelector('.container');
 const timeElement = document.querySelector('.time');
 const weatherElement = document.querySelector('.weather');
 const videoSectionElement = document.querySelector('.video');
+const burgerMenuElement = document.querySelector('.header__burger-menu');
+const navigationHeaderElement = document.querySelector('.navigation[aria-label="header"]');
+const listHeaderElement = document.querySelector('.navigation__list');
+const navigationLinkElements = document.querySelectorAll('.navigation__link');
 
 
 // отображение погоды
@@ -78,7 +82,7 @@ linkLanguageElements.forEach(link => {
 
 
 // прокрутка главной страницы
- function onUpdateStyles() {
+ const onUpdateStyles = () => {
     if (window.innerWidth >= 1000) {
       if (window.innerHeight > videoSectionElement.clientHeight) {
         photosSectionElement.style.opacity = '1';
@@ -98,3 +102,18 @@ linkLanguageElements.forEach(link => {
 }
 window.addEventListener('resize', onUpdateStyles);
 onUpdateStyles();
+
+
+// меню страницы
+burgerMenuElement.addEventListener('click', (evt) => {
+  console.log(evt.currentTarget);
+  navigationHeaderElement.classList.toggle('navigation_active');
+  listHeaderElement.classList.toggle('navigation__list_active');
+});
+navigationLinkElements.forEach(item => {
+  item.addEventListener('click', (evt) => {
+    navigationHeaderElement.classList.toggle('navigation_active');
+    listHeaderElement.classList.toggle('navigation__list_active');
+  });
+})
+

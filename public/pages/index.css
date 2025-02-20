@@ -41,6 +41,7 @@
 @import url("../blocks/navigation/navigation.css");
 @import url("../blocks/navigation/navigation_active/navigation_active.css");
 @import url("../blocks/navigation/navigation__list/navigation__list.css");
+@import url("../blocks/navigation/navigation__list/navigation__list_active/navigation__list_active.css");
 @import url("../blocks/navigation/navigation__item/navigation__item.css");
 @import url("../blocks/navigation/navigation__link/navigation__link.css");
 @import url("../blocks/navigation/navigation__link/navigation__link_active/navigation__link_active.css");
