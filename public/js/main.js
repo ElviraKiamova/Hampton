@@ -116,4 +116,9 @@ navigationLinkElements.forEach(item => {
     listHeaderElement.classList.toggle('navigation__list_active');
   });
 })
-
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    navigationHeaderElement.classList.remove('navigation_active');
+    listHeaderElement.classList.remove('navigation__list_active');
+  }
+});
