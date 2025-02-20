@@ -5,7 +5,7 @@
 @media (max-width: 1000px) {
   .sidebar__address { 
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 11px;
     font-size: 12px;
     line-height: 36px;
     font-style: normal;

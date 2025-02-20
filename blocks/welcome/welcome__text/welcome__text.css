@@ -24,6 +24,7 @@
 
 @media (max-width: 400px) {
   .welcome__text {
+    margin-bottom: 9px;
     line-height: 1.1;
   }
 }
