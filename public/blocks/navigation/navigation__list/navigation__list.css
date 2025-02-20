@@ -1,4 +1,4 @@
-.sidebar__list {
+.navigation__list {
   display: flex;
   flex-direction: column;
   margin: 86px 58px 0 55px;
@@ -7,10 +7,10 @@
   font-size: 12px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: auto;
 }
 
-@media (max-width: 1000px) {
-  .sidebar__list {
-    display: none;
-  }
+.navigation[aria-label="header"] .navigation__list {
+  align-items: center;
+  margin: 23px 3px 30px 0;
 }

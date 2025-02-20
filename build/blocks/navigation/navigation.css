@@ -1,0 +1,20 @@
+.navigation[aria-label="sidebar"] {
+  margin-bottom: auto;
+}
+
+.navigation[aria-label="header"] {
+  display: none;
+  z-index: 1;
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 1000px) {
+  .navigation[aria-label="sidebar"] {
+    display: none;
+  }
+  .navigation[aria-label="header"] {
+    display: none;
+    z-index: 1;
+    background-color: #e6e6e6;
+  }
+}

@@ -21,23 +21,50 @@
           Если ваше соединение медленное или видео не загружается, мы предоставили вам альтернативное изображение на фоне.
         </video>
         <header class="header">
-          <div class="header__box-menu">
-            <div class="header__burger-menu">
+          <div class="header__container">
+            <div class="header__box-menu">
+            <button class="header__burger-menu" type="button">
               <span class="header__line-menu"></span>
               <span class="header__line-menu"></span>
               <span class="header__line-menu"></span>
-            </div>
+            </button>
             <p class="header__text-menu">Меню</p>
+            </div>
+            <a class="header__link-logo" href="#"><img class="header__logo" src="./images/logo.png" alt="отель Hampton"></a>
+            <div class="header__box header__box_time">
+              <p class="header__text">Местное время</p>
+              <p class="header__text header__text_big time">10:23</p>
+            </div>
+            <div  class="header__box header__box_weather">
+              <p class="header__text">ПОГОДА Волгоград</p>
+              <p class="header__text header__text_big weather_text"><span class="weather"></span> &deg;C</p>
+            </div>
           </div>
-          <a class="header__link-logo" href="#"><img class="header__logo" src="./images/logo.png" alt="отель Hampton"></a>
-          <div class="header__box header__box_time">
-            <p class="header__text">Местное время</p>
-            <p class="header__text header__text_big time">10:23</p>
-          </div>
-          <div  class="header__box header__box_weather">
-            <p class="header__text">ПОГОДА Волгоград</p>
-            <p class="header__text header__text_big weather_text"><span class="weather"></span> &deg;C</p>
-          </div>
+          <nav class="navigation" aria-label="header">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Номера</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Галерея</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Спец предложения</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Мероприятия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Услуги</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Достопримечательности</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <a class="button-reserve button-reserve_header" href="http://www.hiltoneasteurope.com">Забронировать</a>
         </header>
         <main class="content">
@@ -79,31 +106,31 @@
       </section>
     </div>
     <aside class="sidebar">
-        <nav class="sidebar__nav">
-          <ul class="sidebar__list">
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu sidebar__link_active" href="#">Главная</a>
+        <nav class="navigation" aria-label="sidebar">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_active" href="#">Главная</a>
             </li>
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu" href="#">Номера</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Номера</a>
             </li>
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu" href="#">Галерея</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Галерея</a>
             </li>
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu" href="#">Спец предложения</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Спец предложения</a>
             </li>
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu" href="#">Мероприятия</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Мероприятия</a>
             </li>
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu" href="#">Услуги</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Услуги</a>
             </li>
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu" href="#">Достопримечательности</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Достопримечательности</a>
             </li>
-            <li class="sidebar__item">
-              <a class="sidebar__link sidebar__link_menu" href="#">Контакты</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
