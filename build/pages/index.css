@@ -48,6 +48,5 @@
 
 
 @import url("../blocks/photos/photos.css");
-@import url("../blocks/photos/photos__img/photos__img.css");
 @import url("../blocks/photos/photos__link/photos__link.css");
 @import url("../blocks/photos/photos__title/photos__title.css");

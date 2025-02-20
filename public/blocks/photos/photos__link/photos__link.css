@@ -1,87 +1,152 @@
 .photos__link {
   position: relative;
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%; 
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #FFF;
   cursor: pointer;
   overflow: hidden;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .photos__link.cozy-rooms {
+  justify-content: flex-end;
+  padding: 55px 56px;
+  background-image: url(../../../images/cozy-rooms.jpg);
+  line-height: 1.2;
   grid-column: 1 / span 2;
   grid-row: 1 / 2;
   color: #4d4d4d;
 }
 
 .photos__link.special-offers {
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 55px 65px;
+  background-image: url(../../../images/special-offers.jpg);
+  line-height: 1.2;
   grid-column: 3 / 4;
   grid-row: 1 / 2;
 }
 
 .photos__link.organization-events {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 55px 70px;
+  background-image: url(../../../images/organization-events.jpg);
+  line-height: 1.2;
   grid-column: 4 / 5;
   grid-row: 1 / 2;
 }
 
 .photos__link.hotel-gallery {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 55px 70px;
+  background-image: url(../../../images/hotel-gallery.jpg);
+  line-height: 1.2;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 
 .photos__link.services {
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 45px 65px;
+  background-image: url(../../../images/services.jpg);
+  line-height: 1.2;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
 .photos__link.visit {
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 286px 255px 0;
+  background-image: url(../../../images/visit-Volgograd.jpg);
+  line-height: 1.2;
   grid-column: 3 / span 2;
   grid-row: 2 / 3;
 }
 
-@media (max-width: 1750px) {
+@media (max-width: 1920px) {
+  .photos__link.cozy-rooms {
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 40px 70px;
+  }
+  .photos__link.special-offers {
+    padding: 50px 75px;
+  }
   .photos__link.organization-events {
+    padding: 36px 60px;
+  }
+  .photos__link.hotel-gallery {
+    padding: 48px 70px;
+  }
+  .photos__link.services {
+    padding: 45px 60px;
+  }
+  .photos__link.visit {
+    padding: 0 100px 180px 0;
+  }
+}
+
+@media (max-width: 1750px) {
+  .photos__link.cozy-rooms {
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 33px 45px;
+  }
+  .photos__link.services {
+    align-items: flex-start;
+    padding: 48px 50px;
+  }
+  .photos__link.organization-events {
+    padding: 36px 70px;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
   }
   .photos__link.special-offers {
+    padding: 43px 60px;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
   .photos__link.visit {
+    padding: 0 430px 135px 0;
     grid-column: 1 / span 3;
     grid-row: 3 / 4;
   }
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1300px) {
   .photos__link.cozy-rooms {
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px 50px;
     grid-column: 1 / span 2;
     grid-row: 1 / 2;
     color: #4d4d4d;
   }
-
   .photos__link.organization-events {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
-
   .photos__link.hotel-gallery {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
-
   .photos__link.services {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
-
   .photos__link.special-offers {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }
-
   .photos__link.visit {
     grid-column: 1 / span 2;
     grid-row: 4 / 5;
@@ -90,31 +155,42 @@
 
 @media (max-width: 900px) {
   .photos__link.cozy-rooms {
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 20px 35px;
     grid-column: 1;
     grid-row: 1;
   }
-
   .photos__link.organization-events {
+    align-items: flex-end;
+    padding: 30px 35px;
     grid-column: 1;
     grid-row: 2;
   }
-
   .photos__link.hotel-gallery {
+    padding: 25px 35px;
     grid-column: 1;
     grid-row: 3;
   }
-
   .photos__link.services {
+    align-items: flex-end;
+    padding: 30px 28px;
     grid-column: 1;
     grid-row: 4;
   }
-
   .photos__link.special-offers {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 25px 35px;
+    text-align: end;
     grid-column: 1;
     grid-row: 5;
   }
-
   .photos__link.visit {
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 78px 35px 0 0;
+    text-align: end;
     grid-column: 1;
     grid-row: 6;
   }
